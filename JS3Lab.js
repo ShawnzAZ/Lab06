@@ -40,7 +40,8 @@ let alphabetString = 'abcdefghijklmnopqrstuvwxyz';
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+let alphaArray = alphabetString.split('');
+console.log(alphaArray)
 
 
 
@@ -59,7 +60,8 @@ let alphabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+const reversed = alphabetArray.reverse();
+console.log(reversed);
 
 
 
@@ -82,8 +84,17 @@ let array1 = [1, 5, 6, 9, 10, 14];
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+console.log("S1", array1)
+console.log("S2", array1[2])
+console.log("S3", array1[array1.length -1])
 
+array1.push(16, 3)
+console.log("S4", array1)
 
+console.log("S5", array1[2])
+
+console.log("S6", array1[array1.length -1])
+console.log("New final element found!")
 
 
 
@@ -102,9 +113,20 @@ Question 4: Todo List \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+let myTodoList = [];
 
+myTodoList.push("gym", "tan", "laundry")
+console.log("S2", myTodoList)
 
+myTodoList.splice(1, 1);
+console.log("S3", myTodoList)
 
+let yourTodoList = [];
+yourTodoList.push("shower", "shave")
+console.log("S4", yourTodoList)
+
+let ourTodoList = myTodoList.concat(yourTodoList);
+console.log("S5", ourTodoList)
 
 
 
@@ -123,17 +145,23 @@ Question 5: isEven  \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+function isEven(x) {
+       if (x % 2 === 0) {
+              return true;
+       } else {
+              return false;
+       }
+}
 
 
 
 /* ↑ YOUR CODE HERE ↑ */
 
 //! Sample test cases for the above isEven function (uncomment to test)
-//console.log(isEven(2));   //should return true
-//console.log(isEven(3));   //should return false
-//console.log(isEven(4));   //should return true
-//console.log(isEven(5));   //should return false
+console.log(isEven(2));   //should return true
+console.log(isEven(3));   //should return false
+console.log(isEven(4));   //should return true
+console.log(isEven(5));   //should return false
 
 
 
